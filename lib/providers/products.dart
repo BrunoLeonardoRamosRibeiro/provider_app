@@ -6,8 +6,6 @@ import 'package:shop/providers/product.dart';
 class Products with ChangeNotifier {
   List<Product> _items = DUMMY_PRODUCTS;
 
-  bool _showFavoriteOnly = false;
-
   List<Product> get items => [ ..._items ];
 
   List<Product> get favoriteItems {
